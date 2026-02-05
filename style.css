@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+}
+
+.layout {
+  display: flex;
+  height: calc(100vh - 90px);
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  color: #1db954;
+  margin-bottom: 30px;
+}
+
+.menu a,
+.playlist-section a {
+  display: block;
+  color: #b3b3b3;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.menu a:hover,
+.playlist-section a:hover {
+  color: white;
+}
+
+.playlist-section {
+  margin-top: 30px;
+}
+
+.playlist-section h2 {
+  font-size: 12px;
+  color: #b3b3b3;
+  margin-bottom: 10px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.main-content h2 {
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #181818;
+  padding: 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #282828;
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* PLAYER */
+.player {
+  height: 90px;
+  background-color: #181818;
+  border-top: 1px solid #282828;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.music-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.music-info img {
+  width: 55px;
+  height: 55px;
+}
+
+.controls {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.volume {
+  font-size: 18px;
+}
